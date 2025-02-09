@@ -11,7 +11,6 @@ const Home = () => {
   const mainRef = useRef<HTMLDivElement>(null);
   const searchParams = useSearchParams();
   const page = searchParams.get('page');
-  
 
   const { movies, currentPage, totalPage, loading } = useMovies(
     `/movie/popular`,
